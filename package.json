@@ -1,0 +1,119 @@
+{
+  "name": "SortRevolution",
+  "author": "Luigi Picaro",
+  "version": "2.2.0",
+  "pebble": {
+    "displayName": "SortRevolution (Reborn)",
+    "uuid": "b1230861-d4eb-4f6e-a2d0-eaa2a07797dd",
+    "sdkVersion": "3",
+    "targetPlatforms": [
+      "aplite",
+      "basalt",
+      "diorite",
+      "flint",
+      "emery"
+    ],
+    "watchapp": {
+      "watchface": true
+    },
+    "capabilities": [
+      "configurable",
+      "health"
+    ],
+    "enableMultiJS": true,
+    "messageKeys": {
+      "usdate": 1,
+      "hourvibe": 2,
+      "hcolors": 3,
+      "tcolors": 4,
+      "fcolors": 5,
+      "health_info": 6,
+      "steps": 7,
+      "heart_interval": 8
+    },
+    "resources": {
+      "media": [
+        {
+          "menuIcon": true,
+          "type": "png",
+          "name": "MENU_ICON",
+          "file": "images/menu_icon.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "BT",
+          "file": "images/bt.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "STEPS",
+          "file": "images/steps.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "HEART",
+          "file": "images/heart.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "BATTERY",
+          "file": "images/battery.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "TIME_0",
+          "file": "images/TIME_0.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "TIME_1",
+          "file": "images/TIME_1.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "TIME_2",
+          "file": "images/TIME_2.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "TIME_3",
+          "file": "images/TIME_3.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "TIME_4",
+          "file": "images/TIME_4.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "TIME_5",
+          "file": "images/TIME_5.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "TIME_6",
+          "file": "images/TIME_6.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "TIME_7",
+          "file": "images/TIME_7.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "TIME_8",
+          "file": "images/TIME_8.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "TIME_9",
+          "file": "images/TIME_9.png"
+        }
+      ]
+    }
+  },
+  "dependencies": {
+    "@rebble/clay": "^1.0.10",
+    "pebble-clay": "^1.0.4"
+  }
+}
