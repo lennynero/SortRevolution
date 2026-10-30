@@ -10,7 +10,7 @@ module.exports = function(lang) {
 			fcolors: "Footer colors",
 			health: "Health",
 			health_info: "Enable health metrics",
-			steps: "Steps (In km)",
+			steps: "Steps (distance)",
 			heart_interval: "Heart Updates",
 			hr_alert: "* Only on PT2",
 			heart_updates_no: "Disabled",
@@ -30,7 +30,7 @@ module.exports = function(lang) {
 			fcolors: "Colori Footer",
 			health: "Salute",
 			health_info: "Abilita le metriche sulla salute",
-			steps: "Passi (In km)",
+			steps: "Passi (distanza)",
 			heart_interval: "Aggiornamenti Cardio",
 			hr_alert: "* Solo su PT2",
 			heart_updates_no: "Disabilitati",
@@ -65,7 +65,7 @@ module.exports = function(lang) {
 					"type": "toggle",
 					"messageKey": "hourvibe",
 					"label": t.hoursvibe,
-					"defaultValue": true
+					"defaultValue": false
 				}
 			]
 		},
@@ -92,7 +92,7 @@ module.exports = function(lang) {
 					"type": "toggle",
 					"messageKey": "fcolors",
 					"label": t.fcolors,
-					"defaultValue": false
+					"defaultValue": true
 				}
 			]
 		},
@@ -106,12 +106,6 @@ module.exports = function(lang) {
 				},
 				{
 					"type": "toggle",
-					"messageKey": "health_info",
-					"label": t.health_info,
-					"defaultValue": true
-				},
-				{
-					"type": "toggle",
 					"messageKey": "steps",
 					"label": t.steps,
 					"defaultValue": true
@@ -121,7 +115,7 @@ module.exports = function(lang) {
 					"messageKey": "heart_interval",
 					"label": t.heart_interval,
 					"description": t.hr_alert,
-					"defaultValue": "0", // -1 = Disabilitato, 0 = OS (Standard), 60 = 1 min, 300 = 5 min, 600 = 10 min
+					"defaultValue": "600", // -1 = Disabilitato, 0 = OS (Standard), 60 = 1 min, 300 = 5 min, 600 = 10 min
 					"options": [
 						{ "label": t.heart_updates_no, "value": "-1" },
 						{ "label": t.heart_updates_os, "value": "0" },

@@ -27,9 +27,8 @@
       "hcolors": 3,
       "tcolors": 4,
       "fcolors": 5,
-      "health_info": 6,
-      "steps": 7,
-      "heart_interval": 8
+      "steps": 6,
+      "heart_interval": 7
     },
     "resources": {
       "media": [
