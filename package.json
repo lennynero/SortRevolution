@@ -1,7 +1,7 @@
 {
   "name": "SortRevolution",
   "author": "Luigi Picaro",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "pebble": {
     "displayName": "SortRevolution (Reborn)",
     "uuid": "b1230861-d4eb-4f6e-a2d0-eaa2a07797dd",
@@ -11,7 +11,8 @@
       "basalt",
       "diorite",
       "flint",
-      "emery"
+      "emery",
+			"gabbro"
     ],
     "watchapp": {
       "watchface": true
@@ -20,18 +21,41 @@
       "configurable",
       "health"
     ],
+		"manifestVersion": 2,
+		"usesPermissions": [
+			"network"
+		],
     "enableMultiJS": true,
     "messageKeys": {
-      "usdate": 1,
-      "hourvibe": 2,
-      "hcolors": 3,
-      "tcolors": 4,
-      "fcolors": 5,
-      "steps": 6,
-      "heart_interval": 7
+      "hourvibe": 1,
+      "hcolors": 2,
+      "tcolors": 3,
+      "fcolors": 4,
+      "steps": 5,
+      "heart_interval": 6
     },
     "resources": {
       "media": [
+        {
+          "type": "font",
+          "name": "FR_FONT_12",
+          "file": "FreeboxRevolution.ttf"
+        },
+        {
+          "type": "font",
+          "name": "FR_FONT_16",
+          "file": "FreeboxRevolution.ttf"
+        },
+        {
+          "type": "font",
+          "name": "FR_FONT_18",
+          "file": "FreeboxRevolution.ttf"
+        },
+        {
+          "type": "font",
+          "name": "FR_FONT_20",
+          "file": "FreeboxRevolution.ttf"
+        },
         {
           "menuIcon": true,
           "type": "png",
@@ -112,7 +136,6 @@
     }
   },
   "dependencies": {
-    "@rebble/clay": "^1.0.10",
-    "pebble-clay": "^1.0.4"
+    "@rebble/clay": "^1.0.10"
   }
 }

@@ -1,8 +1,6 @@
 module.exports = function(lang) {
   var i18n = {
     en: { title: "Settings", 
-			datetime: "Date Time", 
-			usdate: "US Date format (MM dd)", 
 			hoursvibe: "Vibe on Hour",
 			colors: "Colors",
 			hcolors: "Header colors",
@@ -10,7 +8,7 @@ module.exports = function(lang) {
 			fcolors: "Footer colors",
 			health: "Health",
 			health_info: "Enable health metrics",
-			steps: "Steps (distance)",
+			walked: "Walk (distance)",
 			heart_interval: "Heart Updates",
 			hr_alert: "* Only on PT2",
 			heart_updates_no: "Disabled",
@@ -21,8 +19,6 @@ module.exports = function(lang) {
 			save: "Save settings"
 		},
     it: { title: "Impostazioni",
-			datetime: "Date e Ora", 
-			usdate: "Formato Data US(MM dd)", 
 			hoursvibe: "Vibra ogni Ora",
 			colors: "Colori",
 			hcolors: "Colori Header",
@@ -30,7 +26,7 @@ module.exports = function(lang) {
 			fcolors: "Colori Footer",
 			health: "Salute",
 			health_info: "Abilita le metriche sulla salute",
-			steps: "Passi (distanza)",
+			walked: "Cammino (distanza)",
 			heart_interval: "Aggiornamenti Cardio",
 			hr_alert: "* Solo su PT2",
 			heart_updates_no: "Disabilitati",
@@ -57,15 +53,9 @@ module.exports = function(lang) {
 				},
 				{
 					"type": "toggle",
-					"messageKey": "usdate",
-					"label": t.usdate,
-					"defaultValue": false
-				},
-				{
-					"type": "toggle",
 					"messageKey": "hourvibe",
 					"label": t.hoursvibe,
-					"defaultValue": false
+					"defaultValue": true
 				}
 			]
 		},
@@ -107,7 +97,7 @@ module.exports = function(lang) {
 				{
 					"type": "toggle",
 					"messageKey": "steps",
-					"label": t.steps,
+					"label": t.walked,
 					"defaultValue": true
 				},
 				{
